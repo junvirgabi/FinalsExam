@@ -16,6 +16,9 @@ import sidespell.tech.finalsexam.R;
 
 public class MainFragment extends ListFragment {
 
+    boolean mDualPane;
+    int mCurCheckPosition = 0;
+
 
     public interface OnTopicItemClickListener {
         void onItemClick(int position);
@@ -65,5 +68,7 @@ public class MainFragment extends ListFragment {
                 }
             }
         });
+
+
     }
 }

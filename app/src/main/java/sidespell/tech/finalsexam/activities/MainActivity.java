@@ -21,16 +21,25 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnTo
         MainFragment mainFragment = (MainFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.fragment_main);
 
+        mainFragment.setOnTopicItemClickListener(this);
+
         if (mDualPane) {
             onItemClick(0);
         }
     }
 
+
     public void onItemClick(int position) {
         if (mDualPane) {
             // TODO: If app to run is on a tablet, show the PredictGenderFragment on the right side
+//            PredictGenderFragment PGFragment = (PredictGenderFragment) getSupportFragmentManager()
+//                    .findFragmentById(R.id.fragment_main);
+
         } else {
             // TODO: If app to run is on a phone, launch a new activity to present the Predict Gender screen
+            Intent i = new Intent(this,PredictGenderActivity.class);
+            startActivity(i);
+
         }
     }
 }

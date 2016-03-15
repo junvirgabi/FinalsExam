@@ -27,6 +27,7 @@ public class PredictGenderFragment extends Fragment implements View.OnClickListe
     private FloatingActionButton mFabGetGender;
     private ArrayAdapter<String> mAdapter;
 
+
     public static PredictGenderFragment newInstance() {
         return new PredictGenderFragment();
     }
@@ -43,8 +44,14 @@ public class PredictGenderFragment extends Fragment implements View.OnClickListe
         mFabGetGender = (FloatingActionButton) view.findViewById(R.id.fabGetGender);
 
         // Set button listener
-        mFabGetGender.setOnClickListener(this);
+        mFabGetGender.setOnClickListener((new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+            }
+        }));
+
         return view;
+
     }
 
     @Override

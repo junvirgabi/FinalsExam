@@ -15,6 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activities.PredictGenderActivity"
+            android:label="@string/predict_gender" >
+        </activity>
     </application>
 
 </manifest>
