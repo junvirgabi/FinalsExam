@@ -9,7 +9,7 @@ import sidespell.tech.finalsexam.R;
 import sidespell.tech.finalsexam.fragments.MainFragment;
 import sidespell.tech.finalsexam.fragments.PredictGenderFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainFragment.OnTopicItemClickListener {
 
     private boolean mDualPane;
 
